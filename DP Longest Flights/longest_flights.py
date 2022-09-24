@@ -32,5 +32,3 @@ flights = flights.drop(columns=['City'])
 flights = flights.rename(columns={'Lat': 'Lat_to', 'Lng': 'Lng_to'})
 
 flights.to_csv('Output.csv')
-
-print(flights)
