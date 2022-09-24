@@ -16,6 +16,4 @@ df = df[df['Overall Rank'] < 101]
 
 df = df.pivot(['Overall Rank', 'Artist Name'], 'Year', 'Year Rank')
 
-# df.to_csv('Output.csv')
-
-print(df)
+df.to_csv('Output.csv')
