@@ -7,8 +7,6 @@ def calculate_demographic_data(print_data=False):
     # How many of each race are represented in this dataset? This should be a Pandas series with race names as the index labels.
     race_count = df['race'].value_counts()
 
-    print(race_count)
-
     # What is the average age of men?
     age = df[['age']][df.sex == 'Male']
     average_age_men = round(age.mean(), 1)[0]
